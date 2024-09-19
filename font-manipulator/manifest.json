@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Font Manipulator",
+  "version": "1.0",
+  "description": "Changes the font of the body to 'Source Code Pro' or 'Monospace'",
+  "content_scripts": [
+    {
+      "js": ["script.js"],
+      "matches": [
+        "*://*/*",
+        "*://*/*"
+      ]
+    }
+  ],
+  "action": {
+    "default_icon": "f.png"
+  },
+  "permissions": [
+    "activeTab"
+  ]
+}
